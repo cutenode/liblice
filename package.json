@@ -1,7 +1,7 @@
 {
   "name": "liblice",
   "version": "1.0.0",
-  "description": "",
+  "description": "liblice is a module to detect licenses throughout your entire installed dependency tree.",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
