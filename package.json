@@ -19,5 +19,13 @@
   "license": "MIT",
   "dependencies": {
     "load-json-file": "^6.1.0"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/cutenode/liblice.git"
+  },
+  "bugs": {
+    "url": "https://github.com/cutenode/liblice/issues"
+  },
+  "homepage": "https://github.com/cutenode/liblice#readme"
 }
