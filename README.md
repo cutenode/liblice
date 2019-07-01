@@ -2,7 +2,13 @@
 
 liblice is a module to detect licenses throughout your entire _installed_ dependency tree.
 
-liblice crawls node_modules, fetches all package.json files, and parses them. It can return the data it fetches in a few different ways, depending on how you want to consume it.
+liblice crawls `node_modules`, fetches all `package.json` files, and parses them. It can return the data it fetches in a few different ways, depending on how you want to consume it.
+
+## Installation
+
+```bash
+npm install liblice
+```
 
 ## Usage
 
