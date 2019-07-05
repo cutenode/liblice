@@ -1,6 +1,6 @@
 {
   "name": "liblice",
-  "version": "1.0.3",
+  "version": "1.1.0",
   "description": "liblice is a module to detect licenses throughout your entire installed dependency tree.",
   "main": "index.js",
   "scripts": {
