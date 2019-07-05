@@ -15,17 +15,25 @@ npm install liblice
 ### Array Output
 
 ```js
-const arrayOfLicenses = require('liblice').licenseArray
+const { licenseArray } = require('liblice').
 
-arrayOfLicenses('.') // where the current working directory has node_moodules
+licenseArray('.') // where the current working directory has node_moodules
 ```
 
 ### Object Output
 
 ```js
-const objectOfLicenses = require('liblice').licenseObject
+const { licenseObject } = require('liblice')
 
-objectOfLicenses('.') // where the current working directory has node_moodules
+licenseObject('.') // where the current working directory has node_moodules
+```
+
+### License Report Output
+
+```js
+const { licenseReport }  = require('../index')
+
+licenseReport('.') // where the current working directory has node_moodules
 ```
 
 ## Caveats
