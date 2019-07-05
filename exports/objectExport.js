@@ -7,7 +7,7 @@ const buildObjectExport = function (directory) {
 
   arrayOfPackageJsonFiles.forEach(function (jsonFile) {
     const loadedJSON = loadPackagejson.sync(jsonFile)
-    objectOfLicenses[loadedJSON.name] = {license: loadPackagejson.sync(jsonFile).license ? loadPackagejson.sync(jsonFile).license : undefined, path: jsonFile, version: loadPackagejson.sync(jsonFile).version ? loadPackagejson.sync(jsonFile).version : undefined, author: loadPackagejson.sync(jsonFile).author ? loadPackagejson.sync(jsonFile).author : undefined}
+    objectOfLicenses[loadedJSON.name] = { license: loadPackagejson.sync(jsonFile).license ? loadPackagejson.sync(jsonFile).license : undefined, path: jsonFile, version: loadPackagejson.sync(jsonFile).version ? loadPackagejson.sync(jsonFile).version : undefined, author: loadPackagejson.sync(jsonFile).author ? loadPackagejson.sync(jsonFile).author : undefined }
   })
 
   return objectOfLicenses

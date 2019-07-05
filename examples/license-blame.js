@@ -1,7 +1,7 @@
 // Run this in the root project directory:
 // $ node examples/list-my-licenses.js
 
-const { licenseReport }  = require('../index')
+const { licenseReport } = require('../index')
 
 const jsonReport = JSON.stringify(licenseReport('.'), null, 2)
 
