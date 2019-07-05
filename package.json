@@ -1,6 +1,6 @@
 {
   "name": "liblice",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "description": "liblice is a module to detect licenses throughout your entire installed dependency tree.",
   "main": "index.js",
   "scripts": {
@@ -24,7 +24,7 @@
     "lib/*",
     "exports/*",
     "index.js"
-  ], 
+  ],
   "repository": {
     "type": "git",
     "url": "git+https://github.com/cutenode/liblice.git"
