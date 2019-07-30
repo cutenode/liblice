@@ -1,9 +1,9 @@
-const arrayOfLicenses = require('./exports/array')
-const objectOfLicenses = require('./exports/object')
-const objectLicenseReport = require('./exports/report')
+const list = require('./exports/list')
+const modules = require('./exports/modules')
+const licenses = require('./exports/licenses')
 
 module.exports = {
-  licenseArray: arrayOfLicenses,
-  licenseObject: objectOfLicenses,
-  licenseReport: objectLicenseReport
+  list: list,
+  modules: modules,
+  licenses: licenses
 }
