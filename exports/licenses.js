@@ -1,7 +1,7 @@
-const objectExport = require('./modules')
+const modules = require('./modules')
 
 const buildObjectLicenseReport = function (directory) {
-  const data = objectExport(directory) // get our basic data from objectExport
+  const data = modules(directory) // get our basic data from modules.js
   const report = {} // initalize object that we're going to export
 
   for (var checkedModule in data) { // loop over data that we pulled in
