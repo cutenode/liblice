@@ -18,6 +18,7 @@
   "author": "Tierney Cyren <hello@bnb.im>",
   "license": "MIT",
   "dependencies": {
+    "conformance": "^1.0.0",
     "load-json-file": "^6.1.0"
   },
   "files": [
@@ -32,5 +33,9 @@
   "bugs": {
     "url": "https://github.com/cutenode/liblice/issues"
   },
-  "homepage": "https://github.com/cutenode/liblice#readme"
+  "homepage": "https://github.com/cutenode/liblice#readme",
+  "devDependencies": {
+    "jest": "^24.8.0",
+    "standard": "^13.0.2"
+  }
 }
