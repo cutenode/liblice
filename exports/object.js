@@ -10,7 +10,7 @@ const buildObjectExport = function (directory) {
     const loadedJSON = loadPackagejson.sync(jsonFile)
     const loadedCompliance = compliance(loadedJSON.license)
 
-    objectOfLicenses[loadedJSON.name] = { 
+    objectOfLicenses[loadedJSON.name] = {
       license: loadedJSON.license
         ? loadedJSON.license
         : undefined,
