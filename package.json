@@ -4,7 +4,9 @@
   "description": "liblice is a module to detect licenses throughout your entire installed dependency tree.",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "standard": "standard",
+    "jest": "jest --collectCoverage",
+    "test": "npm run standard && npm run jest"
   },
   "keywords": [
     "license",

@@ -11,11 +11,9 @@ const buildObjectExport = function (directory) {
     const loadedJSON = loadPackagejson.sync(jsonFile)
     const parsed = parseLicense(loadedJSON)
     const loadedConformance = conformance(parsed)
-  
+
     objectOfLicenses[loadedJSON.name] = {
-      license: parsed
-        ? parsed
-        : undefined,
+      license: parsed || undefined,
       path: jsonFile,
       version: loadedJSON.version
         ? loadedJSON.version
