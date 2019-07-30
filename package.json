@@ -33,6 +33,11 @@
   "bugs": {
     "url": "https://github.com/cutenode/liblice/issues"
   },
+  "standard": {
+    "ignore": [
+      "/tests"
+    ]
+  },
   "homepage": "https://github.com/cutenode/liblice#readme",
   "devDependencies": {
     "jest": "^24.8.0",
