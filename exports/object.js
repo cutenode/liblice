@@ -1,5 +1,5 @@
 const loadPackagejson = require('load-json-file')
-const compliance = require('compliance')
+const conformance = require('conformance')
 const filtered = require('../lib/filterFileTree')
 
 const buildObjectExport = function (directory) {
@@ -8,7 +8,7 @@ const buildObjectExport = function (directory) {
 
   arrayOfPackageJsonFiles.forEach(function (jsonFile) {
     const loadedJSON = loadPackagejson.sync(jsonFile)
-    const loadedCompliance = compliance(loadedJSON.license)
+    const loadedCompliance = conformance(loadedJSON.license)
 
     objectOfLicenses[loadedJSON.name] = {
       license: loadedJSON.license
@@ -21,7 +21,7 @@ const buildObjectExport = function (directory) {
       author: loadedJSON.author
         ? loadedJSON.author
         : undefined,
-      compliance: compliance
+      compliance: conformance
         ? loadedCompliance
         : undefined
     }

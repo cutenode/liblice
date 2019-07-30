@@ -1,5 +1,4 @@
 const objectExport = require('./object')
-const compliance = require('compliance')
 
 const buildObjectLicenseReport = function (directory) {
   const data = objectExport(directory) // get our basic data from objectExport
