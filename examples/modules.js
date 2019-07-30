@@ -3,4 +3,5 @@
 
 const { modules } = require('../index')
 
-console.log(JSON.stringify(modules('.'), null, 2))
+// We're looking at /tests since it has a dummy set of package.jsons for this express purpose
+console.log(JSON.stringify(modules('./tests'), null, 2))
