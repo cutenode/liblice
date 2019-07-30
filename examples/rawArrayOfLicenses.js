@@ -1,9 +1,9 @@
 // Run this in the root project directory:
 // $ node examples/list-my-licenses.js
 
-const licenses = require('../index').licenseArray
+const { licenseArray } = require('../index')
 
-console.log(licenses('./'))
+console.log(licenseArray('./'))
 
 // Expected Output:
 // [ 'MIT',
