@@ -1,4 +1,5 @@
 const loadPackagejson = require('load-json-file')
+const parseLicense = require('../lib/parseLicense')
 const filtered = require('../lib/filterFileTree')
 
 const buildArrayExport = function (directory) {
@@ -7,7 +8,8 @@ const buildArrayExport = function (directory) {
 
   arrayOfPackageJsonFiles.forEach(function (jsonFile) {
     const loadedJSON = loadPackagejson.sync(jsonFile)
-    arrayOfLicenses.push(loadedJSON.license)
+    const parsed = parseLicense(loadedJSON)
+    arrayOfLicenses.push(parsed)
   })
 
   return arrayOfLicenses
