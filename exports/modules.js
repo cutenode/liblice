@@ -13,17 +13,13 @@ const buildObjectExport = function (directory) {
     const loadedConformance = conformance(parsed)
 
     objectOfLicenses[loadedJSON.name] = {
-      license: parsed || undefined,
+      license: parsed,
       path: jsonFile,
-      version: loadedJSON.version
-        ? loadedJSON.version
-        : undefined,
+      version: loadedJSON.version,
       author: loadedJSON.author
         ? loadedJSON.author
         : undefined,
-      conformance: conformance
-        ? loadedConformance
-        : undefined
+      conformance: loadedConformance
     }
   })
 

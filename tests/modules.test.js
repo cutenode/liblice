@@ -185,9 +185,22 @@ describe('test `modules` export', () => {
           }
         },
         "esutils": {
-          "license": "invalid license",
+          "license": "BSD",
           "path": "tests/node_modules/esutils/package.json",
           "version": "2.0.2",
+          "conformance": {
+            "license": "BSD",
+            "error": "Passed license expression was not a valid license expression. Error from spdx-expression-parse: Error: Unexpected `B` at offset 0"
+          }
+        },
+        "fakefail": {
+          "license": "invalid license",
+          "path": "tests/node_modules/fakefail/package.json",
+          "version": "0.2.0",
+          "author": {
+            "name": "Irakli Gozalishvili",
+            "email": "rfobic@gmail.com"
+          },
           "conformance": {
             "license": "invalid license",
             "error": "Passed license expression was not a valid license expression. Error from spdx-expression-parse: Error: Unexpected `i` at offset 0"
@@ -359,6 +372,29 @@ describe('test `modules` export', () => {
             "name": "Sindre Sorhus",
             "email": "sindresorhus@gmail.com",
             "url": "sindresorhus.com"
+          },
+          "conformance": {
+            "uniqueLicenseIds": [
+              "MIT"
+            ],
+            "spdxLicenseLinks": [
+              "https://spdx.org/licenses/MIT.html#licenseText"
+            ],
+            "spdx": {
+              "osi": true,
+              "fsf": true,
+              "fsfAndOsi": true,
+              "includesDeprecated": false
+            }
+          }
+        },
+        "querystring": {
+          "license": "MIT",
+          "path": "tests/node_modules/querystring/package.json",
+          "version": "0.2.0",
+          "author": {
+            "name": "Irakli Gozalishvili",
+            "email": "rfobic@gmail.com"
           },
           "conformance": {
             "uniqueLicenseIds": [

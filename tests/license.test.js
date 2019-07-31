@@ -23,6 +23,7 @@ describe('test `license` export', () => {
             "lines-and-columns": "1.1.6",
             "load-json-file": "6.2.0",
             "parse-json": "5.0.0",
+            "querystring": "0.2.0",
             "spdx-expression-parse": "3.0.0",
             "strip-bom": "4.0.0",
             "supports-color": "5.5.0"
@@ -41,11 +42,21 @@ describe('test `license` export', () => {
               "includesDeprecated": false
             }
           },
-          "occurances": 18
+          "occurances": 19
+        },
+        "BSD": {
+          "packages": {
+            "esutils": "2.0.2"
+          },
+          "conformance": {
+            "license": "BSD",
+            "error": "Passed license expression was not a valid license expression. Error from spdx-expression-parse: Error: Unexpected `B` at offset 0"
+          },
+          "occurances": 1
         },
         "invalid license": {
           "packages": {
-            "esutils": "2.0.2"
+            "fakefail": "0.2.0"
           },
           "conformance": {
             "license": "invalid license",
