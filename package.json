@@ -5,8 +5,7 @@
   "main": "index.js",
   "scripts": {
     "standard": "standard",
-    "jest": "jest --collectCoverage",
-    "test": "npm run standard && npm run jest"
+    "test": "jest --collectCoverage"
   },
   "keywords": [
     "license",
