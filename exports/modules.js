@@ -18,7 +18,7 @@ const buildObjectExport = function (directory) {
       version: loadedJSON.version,
       author: loadedJSON.author
         ? loadedJSON.author
-        : undefined,
+        : null,
       conformance: loadedConformance
     }
   })

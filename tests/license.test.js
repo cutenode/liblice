@@ -1,7 +1,8 @@
 const licenses = require('../exports/licenses')
 
 describe('test `license` export', () => {
-  test('test dummy node_modules and expect a specific set of outputs', () => {
+
+  test('test dummy node_modules and expect a specific set of outputs that have been JSON.stringified', () => {
     const actual = licenses('./tests')
 
     expect(actual).toEqual(

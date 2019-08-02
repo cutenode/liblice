@@ -33,6 +33,7 @@ describe('test `modules` export', () => {
           "license": "MIT",
           "path": "tests/node_modules/chalk/package.json",
           "version": "2.4.2",
+          "author": null,
           "conformance": {
             "uniqueLicenseIds": [
               "MIT"
@@ -145,6 +146,7 @@ describe('test `modules` export', () => {
           "license": "MIT",
           "path": "tests/node_modules/error-ex/package.json",
           "version": "1.3.2",
+          "author": null,
           "conformance": {
             "uniqueLicenseIds": [
               "MIT"
@@ -188,6 +190,7 @@ describe('test `modules` export', () => {
           "license": "BSD",
           "path": "tests/node_modules/esutils/package.json",
           "version": "2.0.2",
+          "author": null,
           "conformance": {
             "license": "BSD",
             "error": "Passed license expression was not a valid license expression. Error from spdx-expression-parse: Error: Unexpected `B` at offset 0"
@@ -197,10 +200,7 @@ describe('test `modules` export', () => {
           "license": "invalid license",
           "path": "tests/node_modules/fakefail/package.json",
           "version": "0.2.0",
-          "author": {
-            "name": "Irakli Gozalishvili",
-            "email": "rfobic@gmail.com"
-          },
+          "author": null,
           "conformance": {
             "license": "invalid license",
             "error": "Passed license expression was not a valid license expression. Error from spdx-expression-parse: Error: Unexpected `i` at offset 0"
@@ -210,6 +210,7 @@ describe('test `modules` export', () => {
           "license": "ISC",
           "path": "tests/node_modules/graceful-fs/package.json",
           "version": "4.2.0",
+          "author": null,
           "conformance": {
             "uniqueLicenseIds": [
               "ISC"
@@ -555,6 +556,7 @@ describe('test `modules` export', () => {
           }
         }
       }
+         
     )
   })
 })
