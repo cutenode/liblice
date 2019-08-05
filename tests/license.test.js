@@ -43,7 +43,7 @@ describe('test `license` export', () => {
               "includesDeprecated": false
             }
           },
-          "occurances": 19
+          "occurrences": 19
         },
         "BSD": {
           "packages": {
@@ -53,7 +53,7 @@ describe('test `license` export', () => {
             "license": "BSD",
             "error": "Passed license expression was not a valid license expression. Error from spdx-expression-parse: Error: Unexpected `B` at offset 0"
           },
-          "occurances": 1
+          "occurrences": 1
         },
         "invalid license": {
           "packages": {
@@ -63,7 +63,7 @@ describe('test `license` export', () => {
             "license": "invalid license",
             "error": "Passed license expression was not a valid license expression. Error from spdx-expression-parse: Error: Unexpected `i` at offset 0"
           },
-          "occurances": 1
+          "occurrences": 1
         },
         "ISC": {
           "packages": {
@@ -83,7 +83,7 @@ describe('test `license` export', () => {
               "includesDeprecated": false
             }
           },
-          "occurances": 1
+          "occurrences": 1
         },
         "CC-BY-3.0": {
           "packages": {
@@ -103,7 +103,7 @@ describe('test `license` export', () => {
               "includesDeprecated": false
             }
           },
-          "occurances": 1
+          "occurrences": 1
         },
         "CC0-1.0": {
           "packages": {
@@ -123,7 +123,7 @@ describe('test `license` export', () => {
               "includesDeprecated": false
             }
           },
-          "occurances": 1
+          "occurrences": 1
         },
         "(MIT OR CC0-1.0)": {
           "packages": {
@@ -145,7 +145,7 @@ describe('test `license` export', () => {
               "includesDeprecated": false
             }
           },
-          "occurances": 1
+          "occurrences": 1
         }
       }
     )

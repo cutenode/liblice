@@ -38,7 +38,7 @@ Returns an object the names of every license as a key, with the value being an o
 
 - All packages that use the license
 - Conformance information for that license
-- Total number of occurances of the license
+- Total number of occurrences of the license
 
 ```js
 const { licenses }  = require('../index')
