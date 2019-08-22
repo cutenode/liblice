@@ -15,6 +15,7 @@ describe('test `list` export', () => {
         "MIT",
         "MIT",
         "BSD",
+        "MIT",
         "invalid license",
         "ISC",
         "MIT",
