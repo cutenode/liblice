@@ -4,4 +4,4 @@
 // We're looking at /tests since it has a dummy set of package.jsons for this express purpose
 const { list } = require('../index')
 
-console.log(list('.'))
+console.log(JSON.stringify(list('./tests'), null, 2))
