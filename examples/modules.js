@@ -4,4 +4,4 @@
 const { modules } = require('../index')
 
 // We're looking at /tests since it has a dummy set of package.jsons for this express purpose
-console.log(JSON.stringify(modules('./tests'), null, 2))
+console.log(JSON.stringify(modules(`${process.cwd()}/tests`), null, 2))
