@@ -56,6 +56,16 @@ describe('test `license` export', () => {
           },
           "occurances": 1
         },
+        "THIS LICENSE SHOULDN'T BE PARSED": {
+          "packages": {
+            "a-package-that-shouldn-t-be-parsed": "1.3.2"
+          },
+          "conformance": {
+            "license": "THIS LICENSE SHOULDN'T BE PARSED",
+            "error": "Passed license expression was not a valid license expression. Error from spdx-expression-parse: Error: Unexpected `T` at offset 0"
+          },
+          "occurances": 1
+        },
         "invalid license": {
           "packages": {
             "fakefail": "0.2.0"
@@ -148,7 +158,7 @@ describe('test `license` export', () => {
           },
           "occurances": 1
         }
-      }
+      }      
     )
   })
 })

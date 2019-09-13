@@ -2,13 +2,13 @@ const modules = require('../exports/modules')
 
 describe('test `modules` export', () => {
   test('test dummy node_modules and expect a specific object back', () => {
-    const actual = modules('./tests')
+    const actual = modules(`${process.cwd()}/tests`)
 
     expect(actual).toEqual(
       {
         "@babel/code-frame": {
           "license": "MIT",
-          "path": "tests/node_modules/@babel/code-frame/package.json",
+          "path": "/Users/cyren/GitHub/liblice/tests/node_modules/@babel/code-frame/package.json",
           "version": "7.5.5",
           "author": {
             "name": "Sebastian McKenzie",
@@ -31,7 +31,7 @@ describe('test `modules` export', () => {
         },
         "chalk": {
           "license": "MIT",
-          "path": "tests/node_modules/chalk/package.json",
+          "path": "/Users/cyren/GitHub/liblice/tests/node_modules/chalk/package.json",
           "version": "2.4.2",
           "author": null,
           "conformance": {
@@ -51,7 +51,7 @@ describe('test `modules` export', () => {
         },
         "color-convert": {
           "license": "MIT",
-          "path": "tests/node_modules/color-convert/package.json",
+          "path": "/Users/cyren/GitHub/liblice/tests/node_modules/color-convert/package.json",
           "version": "1.9.3",
           "author": {
             "name": "Heather Arthur",
@@ -74,7 +74,7 @@ describe('test `modules` export', () => {
         },
         "color-name": {
           "license": "MIT",
-          "path": "tests/node_modules/color-name/package.json",
+          "path": "/Users/cyren/GitHub/liblice/tests/node_modules/color-name/package.json",
           "version": "1.1.3",
           "author": {
             "name": "DY",
@@ -97,7 +97,7 @@ describe('test `modules` export', () => {
         },
         "conformance": {
           "license": "MIT",
-          "path": "tests/node_modules/conformance/package.json",
+          "path": "/Users/cyren/GitHub/liblice/tests/node_modules/conformance/package.json",
           "version": "1.0.0",
           "author": {
             "name": "Tierney Cyren",
@@ -120,7 +120,7 @@ describe('test `modules` export', () => {
         },
         "deep-is": {
           "license": "MIT",
-          "path": "tests/node_modules/deep-is/package.json",
+          "path": "/Users/cyren/GitHub/liblice/tests/node_modules/deep-is/package.json",
           "version": "0.1.3",
           "author": {
             "name": "Thorsten Lorenz",
@@ -144,7 +144,7 @@ describe('test `modules` export', () => {
         },
         "error-ex": {
           "license": "MIT",
-          "path": "tests/node_modules/error-ex/package.json",
+          "path": "/Users/cyren/GitHub/liblice/tests/node_modules/error-ex/package.json",
           "version": "1.3.2",
           "author": null,
           "conformance": {
@@ -164,7 +164,7 @@ describe('test `modules` export', () => {
         },
         "escape-string-regexp": {
           "license": "MIT",
-          "path": "tests/node_modules/escape-string-regexp/package.json",
+          "path": "/Users/cyren/GitHub/liblice/tests/node_modules/escape-string-regexp/package.json",
           "version": "1.0.5",
           "author": {
             "name": "Sindre Sorhus",
@@ -188,7 +188,7 @@ describe('test `modules` export', () => {
         },
         "esutils": {
           "license": "BSD",
-          "path": "tests/node_modules/esutils/package.json",
+          "path": "/Users/cyren/GitHub/liblice/tests/node_modules/esutils/package.json",
           "version": "2.0.2",
           "author": null,
           "conformance": {
@@ -198,7 +198,7 @@ describe('test `modules` export', () => {
         },
         "fake-deep-node-modules": {
           "license": "MIT",
-          "path": "tests/node_modules/fake-deep-node-modules/package.json",
+          "path": "/Users/cyren/GitHub/liblice/tests/node_modules/fake-deep-node-modules/package.json",
           "version": "4.2.0",
           "author": null,
           "conformance": {
@@ -216,9 +216,19 @@ describe('test `modules` export', () => {
             }
           }
         },
+        "a-package-that-shouldn-t-be-parsed": {
+          "license": "THIS LICENSE SHOULDN'T BE PARSED",
+          "path": "/Users/cyren/GitHub/liblice/tests/node_modules/fake-deep-node-modules/tests/some-folder/node_modules/some-other-folder/another-folder/node_modules/error-ex/package.json",
+          "version": "1.3.2",
+          "author": null,
+          "conformance": {
+            "license": "THIS LICENSE SHOULDN'T BE PARSED",
+            "error": "Passed license expression was not a valid license expression. Error from spdx-expression-parse: Error: Unexpected `T` at offset 0"
+          }
+        },
         "fakefail": {
           "license": "invalid license",
-          "path": "tests/node_modules/fakefail/package.json",
+          "path": "/Users/cyren/GitHub/liblice/tests/node_modules/fakefail/package.json",
           "version": "0.2.0",
           "author": null,
           "conformance": {
@@ -228,7 +238,7 @@ describe('test `modules` export', () => {
         },
         "graceful-fs": {
           "license": "ISC",
-          "path": "tests/node_modules/graceful-fs/package.json",
+          "path": "/Users/cyren/GitHub/liblice/tests/node_modules/graceful-fs/package.json",
           "version": "4.2.0",
           "author": null,
           "conformance": {
@@ -248,7 +258,7 @@ describe('test `modules` export', () => {
         },
         "has-flag": {
           "license": "MIT",
-          "path": "tests/node_modules/has-flag/package.json",
+          "path": "/Users/cyren/GitHub/liblice/tests/node_modules/has-flag/package.json",
           "version": "3.0.0",
           "author": {
             "name": "Sindre Sorhus",
@@ -272,7 +282,7 @@ describe('test `modules` export', () => {
         },
         "is-arrayish": {
           "license": "MIT",
-          "path": "tests/node_modules/is-arrayish/package.json",
+          "path": "/Users/cyren/GitHub/liblice/tests/node_modules/is-arrayish/package.json",
           "version": "0.2.1",
           "author": {
             "name": "Qix",
@@ -295,7 +305,7 @@ describe('test `modules` export', () => {
         },
         "js-tokens": {
           "license": "MIT",
-          "path": "tests/node_modules/js-tokens/package.json",
+          "path": "/Users/cyren/GitHub/liblice/tests/node_modules/js-tokens/package.json",
           "version": "4.0.0",
           "author": {
             "name": "Simon Lydell"
@@ -317,7 +327,7 @@ describe('test `modules` export', () => {
         },
         "json-parse-better-errors": {
           "license": "MIT",
-          "path": "tests/node_modules/json-parse-better-errors/package.json",
+          "path": "/Users/cyren/GitHub/liblice/tests/node_modules/json-parse-better-errors/package.json",
           "version": "1.0.2",
           "author": {
             "name": "Kat Marchán",
@@ -340,7 +350,7 @@ describe('test `modules` export', () => {
         },
         "lines-and-columns": {
           "license": "MIT",
-          "path": "tests/node_modules/lines-and-columns/package.json",
+          "path": "/Users/cyren/GitHub/liblice/tests/node_modules/lines-and-columns/package.json",
           "version": "1.1.6",
           "author": {
             "name": "Brian Donovan",
@@ -363,7 +373,7 @@ describe('test `modules` export', () => {
         },
         "load-json-file": {
           "license": "MIT",
-          "path": "tests/node_modules/load-json-file/package.json",
+          "path": "/Users/cyren/GitHub/liblice/tests/node_modules/load-json-file/package.json",
           "version": "6.2.0",
           "author": {
             "name": "Sindre Sorhus",
@@ -387,7 +397,7 @@ describe('test `modules` export', () => {
         },
         "parse-json": {
           "license": "MIT",
-          "path": "tests/node_modules/parse-json/package.json",
+          "path": "/Users/cyren/GitHub/liblice/tests/node_modules/parse-json/package.json",
           "version": "5.0.0",
           "author": {
             "name": "Sindre Sorhus",
@@ -411,7 +421,7 @@ describe('test `modules` export', () => {
         },
         "querystring": {
           "license": "MIT",
-          "path": "tests/node_modules/querystring/package.json",
+          "path": "/Users/cyren/GitHub/liblice/tests/node_modules/querystring/package.json",
           "version": "0.2.0",
           "author": {
             "name": "Irakli Gozalishvili",
@@ -434,7 +444,7 @@ describe('test `modules` export', () => {
         },
         "spdx-exceptions": {
           "license": "CC-BY-3.0",
-          "path": "tests/node_modules/spdx-exceptions/package.json",
+          "path": "/Users/cyren/GitHub/liblice/tests/node_modules/spdx-exceptions/package.json",
           "version": "2.2.0",
           "author": {
             "name": "The Linux Foundation"
@@ -456,7 +466,7 @@ describe('test `modules` export', () => {
         },
         "spdx-expression-parse": {
           "license": "MIT",
-          "path": "tests/node_modules/spdx-expression-parse/package.json",
+          "path": "/Users/cyren/GitHub/liblice/tests/node_modules/spdx-expression-parse/package.json",
           "version": "3.0.0",
           "author": {
             "name": "Kyle E. Mitchell",
@@ -480,7 +490,7 @@ describe('test `modules` export', () => {
         },
         "spdx-license-ids": {
           "license": "CC0-1.0",
-          "path": "tests/node_modules/spdx-license-ids/package.json",
+          "path": "/Users/cyren/GitHub/liblice/tests/node_modules/spdx-license-ids/package.json",
           "version": "3.0.5",
           "author": {
             "name": "Shinnosuke Watanabe",
@@ -503,7 +513,7 @@ describe('test `modules` export', () => {
         },
         "strip-bom": {
           "license": "MIT",
-          "path": "tests/node_modules/strip-bom/package.json",
+          "path": "/Users/cyren/GitHub/liblice/tests/node_modules/strip-bom/package.json",
           "version": "4.0.0",
           "author": {
             "name": "Sindre Sorhus",
@@ -527,7 +537,7 @@ describe('test `modules` export', () => {
         },
         "supports-color": {
           "license": "MIT",
-          "path": "tests/node_modules/supports-color/package.json",
+          "path": "/Users/cyren/GitHub/liblice/tests/node_modules/supports-color/package.json",
           "version": "5.5.0",
           "author": {
             "name": "Sindre Sorhus",
@@ -551,7 +561,7 @@ describe('test `modules` export', () => {
         },
         "type-fest": {
           "license": "(MIT OR CC0-1.0)",
-          "path": "tests/node_modules/type-fest/package.json",
+          "path": "/Users/cyren/GitHub/liblice/tests/node_modules/type-fest/package.json",
           "version": "0.6.0",
           "author": {
             "name": "Sindre Sorhus",
@@ -575,7 +585,7 @@ describe('test `modules` export', () => {
             }
           }
         }
-      }
+      }      
     )
   })
 })
