@@ -17,6 +17,7 @@ describe('test `license` export', () => {
             "deep-is": "0.1.3",
             "error-ex": "1.3.2",
             "escape-string-regexp": "1.0.5",
+            "fake-deep-node-modules": "4.2.0",
             "has-flag": "3.0.0",
             "is-arrayish": "0.2.1",
             "js-tokens": "4.0.0",
@@ -43,7 +44,7 @@ describe('test `license` export', () => {
               "includesDeprecated": false
             }
           },
-          "occurrences": 19
+          "occurrences": 20
         },
         "BSD": {
           "packages": {

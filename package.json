@@ -5,7 +5,10 @@
   "main": "index.js",
   "scripts": {
     "standard": "standard",
-    "test": "jest --collectCoverage"
+    "test": "jest --collectCoverage",
+    "test:generate:licenses": "node examples/licenses.js > tests/outputs/licenses.json",
+    "test:generate:list": "node examples/list.js > tests/outputs/list.json",
+    "test:generate:modules": "node examples/modules.js > tests/outputs/modules.json"
   },
   "keywords": [
     "license",
