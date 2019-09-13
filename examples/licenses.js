@@ -4,4 +4,4 @@
 const { licenses } = require('../index')
 
 // We're looking at /tests since it has a dummy set of package.jsons for this express purpose
-console.log(JSON.stringify(licenses('./tests'), null, 2))
+console.log(JSON.stringify(licenses(`${process.cwd()}/tests`), null, 2))
