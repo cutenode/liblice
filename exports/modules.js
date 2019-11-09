@@ -1,3 +1,4 @@
+const path = require('path')
 const loadPackagejson = require('load-json-file')
 const conformance = require('conformance')
 const filtered = require('../lib/filterFileTree')
@@ -14,7 +15,7 @@ const buildObjectExport = function (directory) {
 
     objectOfLicenses[loadedJSON.name] = {
       license: parsed,
-      path: jsonFile,
+      path: jsonFile.split(path.sep).join('/'),
       version: loadedJSON.version,
       author: loadedJSON.author
         ? loadedJSON.author

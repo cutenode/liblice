@@ -4,8 +4,6 @@ describe('test `list` export', () => {
   test('test dummy node_modules and expect a specific set of outputs', () => {
     const actual = list('./tests')
 
-    console.log(`actual: ${actual}`)
-
     expect(actual).toEqual(
       [
         "MIT",
