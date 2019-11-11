@@ -6,9 +6,7 @@
   "scripts": {
     "standard": "standard",
     "test": "jest --collectCoverage",
-    "test:generate:licenses": "node examples/licenses.js > tests/outputs/licenses.json",
-    "test:generate:list": "node examples/list.js > tests/outputs/list.json",
-    "test:generate:modules": "node examples/modules.js > tests/outputs/modules.json"
+    "test:generate": "node tests/tests.js"
   },
   "keywords": [
     "license",
