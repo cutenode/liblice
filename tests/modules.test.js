@@ -8,7 +8,7 @@ describe('test `modules` export', () => {
       {
         "@babel/code-frame": {
           "license": "MIT",
-          "path": "tests/node_modules/@babel/code-frame/package.json",
+          "path": "tests/node_modules/@babel-fake/code-frame/package.json",
           "version": "7.5.5",
           "author": {
             "name": "Sebastian McKenzie",
