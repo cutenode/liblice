@@ -1,8 +1,14 @@
 const modules = require('../exports/modules')
 
+// Mocks out a process.cwd() value so it'll pass on remote servers
+// TODO: Ideally, we can genericize this in the build step (tests.js) rather than having to mock my personal machine so *other people*
+// can actually run tests.js
+const mockProcessCWD = jest.fn()
+mockProcessCWD.mockReturnValue(`/Users/cyren/GitHub/liblice`)
+
 describe('test `modules` export', () => {
   test('test dummy node_modules and expect a specific object back', () => {
-    const actual = modules(`${process.cwd()}/tests`)
+    const actual = modules(`${mockProcessCWD()}/tests`)
 
     expect(actual).toEqual(
       {
