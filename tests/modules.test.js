@@ -2,6 +2,14 @@ const modules = require('../exports/modules')
 
 describe('test `modules` export', () => {
   test('test dummy node_modules and expect a specific object back', () => {
+    // simply changes the result of process.cwd so it'll pass on any machine 
+    // as long as the parts we care about actually pass.
+    //
+    // This part should probably be fixed as currently it seems like it can 
+    // only be updated on @bnb's machine, which is less than ideal.
+    const spy = jest.spyOn(process, 'cwd');
+    spy.mockReturnValue('/Users/cyren/GitHub/liblice')
+
     const actual = modules(`${process.cwd()}/tests`)
 
     expect(actual).toEqual(
