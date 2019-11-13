@@ -57,7 +57,7 @@ Conformance information is information that could be useful in the context of li
 
 ## Caveats
 
-Currently, liblice excludes searching any directory in `node_modules` that includes `/test/` because people publish tests for `package.json` files and it creates a bunch of noisy false positives.
+Currently, liblice excludes searching any directory in `node_modules` that includes `/.bin/` since it is a problematic directory and doesn't actually add any value that is not already otherwise derived.
 
 ## TODOs
 
