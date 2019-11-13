@@ -17,7 +17,7 @@ npm install liblice
 Returns an array of all licenses – plus any invalid licenses – within the node modules of the passed directory.
 
 ```js
-const { list } = require('liblice').
+const { list } = require('liblice')
 
 licenseArray('.') // where the current working directory has node_moodules
 ```
