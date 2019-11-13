@@ -1,4 +1,5 @@
 const list = require('../exports/list')
+const path = require('path')
 
 describe('test `list` export', () => {
   test('Test the throw when a directory that doesn\'t exist is passed.', () => {
@@ -8,7 +9,7 @@ describe('test `list` export', () => {
     const normalisedPath = fakeFullPath.split(path.sep).join('/')
 
     const throwingList = function() {
-      list(`./${fakeDirectoryName}`)
+      list(normalisedPath)
     }
 
     expect(throwingList).toThrowError(new Error(errorMessage))
