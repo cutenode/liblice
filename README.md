@@ -19,7 +19,7 @@ Returns an array of all licenses – plus any invalid licenses – within the no
 ```js
 const { list } = require('liblice')
 
-licenseArray('.') // where the current working directory has node_moodules
+list('.') // where the current working directory has node_modules
 ```
 
 ### `modules` Output
@@ -29,7 +29,7 @@ Returns an object of all modules, their license expression, the path to the modu
 ```js
 const { modules } = require('liblice')
 
-licenseObject('.') // where the current working directory has node_moodules
+modules('.') // where the current working directory has node_modules
 ```
 
 ### `licenses` Output
@@ -41,9 +41,9 @@ Returns an object the names of every license as a key, with the value being an o
 - Total number of occurances of the license
 
 ```js
-const { licenses }  = require('../index')
+const { licenses }  = require('liblice')
 
-licenseReport('.') // where the current working directory has node_moodules
+licenses('.') // where the current working directory has node_modules
 ```
 
 ## What is Conformance Information
