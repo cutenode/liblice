@@ -19,6 +19,10 @@ jobs:
       run: npm install
       env:
         CI: true
+    - name: npm run test:generate
+      run: npm run test:generate
+      env:
+        CI: true
     - name: npm test
       run: npm test
       env:

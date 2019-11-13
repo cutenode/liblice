@@ -2,7 +2,7 @@ const modules = require('../exports/modules')
 
 describe('test `modules` export', () => {
   test('test dummy node_modules and expect a specific object back', () => {
-    const actual = modules('./tests')
+    const actual = modules(`./tests`)
 
     expect(actual).toEqual(
       {
@@ -214,6 +214,16 @@ describe('test `modules` export', () => {
               "fsfAndOsi": true,
               "includesDeprecated": false
             }
+          }
+        },
+        "a-package-that-shouldn-t-be-parsed": {
+          "license": "THIS LICENSE SHOULDN'T BE PARSED",
+          "path": "tests/node_modules/fake-deep-node-modules/tests/some-folder/node_modules/some-other-folder/another-folder/node_modules/error-ex/package.json",
+          "version": "1.3.2",
+          "author": null,
+          "conformance": {
+            "license": "THIS LICENSE SHOULDN'T BE PARSED",
+            "error": "Passed license expression was not a valid license expression. Error from spdx-expression-parse: Error: Unexpected `T` at offset 0"
           }
         },
         "fakefail": {
@@ -575,7 +585,7 @@ describe('test `modules` export', () => {
             }
           }
         }
-      }
+      }  
     )
   })
 })

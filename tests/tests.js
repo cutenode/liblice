@@ -22,7 +22,6 @@ const { modules } = require('../index')
 // Licenses
 const licenseJSON = JSON.stringify(licenses('./tests'), null, 2)
 writeSources('/outputs/licenses.json', licenseJSON)
-console.log(licenseJSON)
 
 // List
 const listJSON = JSON.stringify(list('./tests'), null, 2)
@@ -37,6 +36,6 @@ function writeSources (path, output) {
     if (error) throw error
     
     console.log(`wrote ${path} successfully`)
+    process.exitCode = 0
   })
-  
 }
