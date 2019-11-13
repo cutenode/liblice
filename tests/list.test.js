@@ -15,8 +15,6 @@ describe('test `list` export', () => {
         "MIT",
         "MIT",
         "BSD",
-        "MIT",
-        "THIS LICENSE SHOULDN'T BE PARSED",
         "invalid license",
         "ISC",
         "MIT",
@@ -33,7 +31,7 @@ describe('test `list` export', () => {
         "MIT",
         "MIT",
         "(MIT OR CC0-1.0)"
-      ] 
+      ]
     )
   })
 })

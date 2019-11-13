@@ -196,36 +196,6 @@ describe('test `modules` export', () => {
             "error": "Passed license expression was not a valid license expression. Error from spdx-expression-parse: Error: Unexpected `B` at offset 0"
           }
         },
-        "fake-deep-node-modules": {
-          "license": "MIT",
-          "path": "tests/node_modules/fake-deep-node-modules/package.json",
-          "version": "4.2.0",
-          "author": null,
-          "conformance": {
-            "uniqueLicenseIds": [
-              "MIT"
-            ],
-            "spdxLicenseLinks": [
-              "https://spdx.org/licenses/MIT.html#licenseText"
-            ],
-            "spdx": {
-              "osi": true,
-              "fsf": true,
-              "fsfAndOsi": true,
-              "includesDeprecated": false
-            }
-          }
-        },
-        "a-package-that-shouldn-t-be-parsed": {
-          "license": "THIS LICENSE SHOULDN'T BE PARSED",
-          "path": "tests/node_modules/fake-deep-node-modules/tests/some-folder/node_modules/some-other-folder/another-folder/node_modules/error-ex/package.json",
-          "version": "1.3.2",
-          "author": null,
-          "conformance": {
-            "license": "THIS LICENSE SHOULDN'T BE PARSED",
-            "error": "Passed license expression was not a valid license expression. Error from spdx-expression-parse: Error: Unexpected `T` at offset 0"
-          }
-        },
         "fakefail": {
           "license": "invalid license",
           "path": "tests/node_modules/fakefail/package.json",
@@ -585,7 +555,7 @@ describe('test `modules` export', () => {
             }
           }
         }
-      }  
+      }
     )
   })
 })
