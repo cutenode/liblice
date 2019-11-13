@@ -17,7 +17,6 @@ describe('test `license` export', () => {
             "deep-is": "0.1.3",
             "error-ex": "1.3.2",
             "escape-string-regexp": "1.0.5",
-            "fake-deep-node-modules": "4.2.0",
             "has-flag": "3.0.0",
             "is-arrayish": "0.2.1",
             "js-tokens": "4.0.0",
@@ -44,7 +43,7 @@ describe('test `license` export', () => {
               "includesDeprecated": false
             }
           },
-          "occurances": 20
+          "occurances": 19
         },
         "BSD": {
           "packages": {
@@ -53,16 +52,6 @@ describe('test `license` export', () => {
           "conformance": {
             "license": "BSD",
             "error": "Passed license expression was not a valid license expression. Error from spdx-expression-parse: Error: Unexpected `B` at offset 0"
-          },
-          "occurances": 1
-        },
-        "THIS LICENSE SHOULDN'T BE PARSED": {
-          "packages": {
-            "a-package-that-shouldn-t-be-parsed": "1.3.2"
-          },
-          "conformance": {
-            "license": "THIS LICENSE SHOULDN'T BE PARSED",
-            "error": "Passed license expression was not a valid license expression. Error from spdx-expression-parse: Error: Unexpected `T` at offset 0"
           },
           "occurances": 1
         },
@@ -158,7 +147,7 @@ describe('test `license` export', () => {
           },
           "occurances": 1
         }
-      }      
+      }    
     )
   })
 })
