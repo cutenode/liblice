@@ -21,7 +21,7 @@ const buildObjectLicenseReport = function (directory) {
       report[licenseName].conformance = {} // if the conformance property is not an object on the license name we're currently iterating over, define it
     }
 
-    report[licenseName].occurances = (report[licenseName].occurances || 0) + 1 // add one to the occurance property each loop that the license name exists
+    report[licenseName].occurrences = (report[licenseName].occurrences || 0) + 1 // add one to the occurrence property each loop that the license name exists
     report[licenseName].packages[checkedModule] = versionNumber // for each module that's of a license type, add it as a property to the packages property and assgin its value as the installed version
     report[licenseName].conformance = conformance
   }
