@@ -29,6 +29,27 @@ describe('test `license` export', () => {
             "strip-bom": "4.0.0",
             "supports-color": "5.5.0"
           },
+          "paths": {
+            "@babel/code-frame": "tests/node_modules/@babel/code-frame/package.json",
+            "chalk": "tests/node_modules/chalk/package.json",
+            "color-convert": "tests/node_modules/color-convert/package.json",
+            "color-name": "tests/node_modules/color-name/package.json",
+            "conformance": "tests/node_modules/conformance/package.json",
+            "deep-is": "tests/node_modules/deep-is/package.json",
+            "error-ex": "tests/node_modules/error-ex/package.json",
+            "escape-string-regexp": "tests/node_modules/escape-string-regexp/package.json",
+            "has-flag": "tests/node_modules/has-flag/package.json",
+            "is-arrayish": "tests/node_modules/is-arrayish/package.json",
+            "js-tokens": "tests/node_modules/js-tokens/package.json",
+            "json-parse-better-errors": "tests/node_modules/json-parse-better-errors/package.json",
+            "lines-and-columns": "tests/node_modules/lines-and-columns/package.json",
+            "load-json-file": "tests/node_modules/load-json-file/package.json",
+            "parse-json": "tests/node_modules/parse-json/package.json",
+            "querystring": "tests/node_modules/querystring/package.json",
+            "spdx-expression-parse": "tests/node_modules/spdx-expression-parse/package.json",
+            "strip-bom": "tests/node_modules/strip-bom/package.json",
+            "supports-color": "tests/node_modules/supports-color/package.json"
+          },
           "conformance": {
             "uniqueLicenseIds": [
               "MIT"
@@ -49,6 +70,9 @@ describe('test `license` export', () => {
           "packages": {
             "esutils": "2.0.2"
           },
+          "paths": {
+            "esutils": "tests/node_modules/esutils/package.json"
+          },
           "conformance": {
             "license": "BSD",
             "error": "Passed license expression was not a valid license expression. Error from spdx-expression-parse: Error: Unexpected `B` at offset 0"
@@ -59,6 +83,9 @@ describe('test `license` export', () => {
           "packages": {
             "fakefail": "0.2.0"
           },
+          "paths": {
+            "fakefail": "tests/node_modules/fakefail/package.json"
+          },
           "conformance": {
             "license": "invalid license",
             "error": "Passed license expression was not a valid license expression. Error from spdx-expression-parse: Error: Unexpected `i` at offset 0"
@@ -68,6 +95,9 @@ describe('test `license` export', () => {
         "ISC": {
           "packages": {
             "graceful-fs": "4.2.0"
+          },
+          "paths": {
+            "graceful-fs": "tests/node_modules/graceful-fs/package.json"
           },
           "conformance": {
             "uniqueLicenseIds": [
@@ -89,6 +119,9 @@ describe('test `license` export', () => {
           "packages": {
             "spdx-exceptions": "2.2.0"
           },
+          "paths": {
+            "spdx-exceptions": "tests/node_modules/spdx-exceptions/package.json"
+          },
           "conformance": {
             "uniqueLicenseIds": [
               "CC-BY-3.0"
@@ -108,6 +141,9 @@ describe('test `license` export', () => {
         "CC0-1.0": {
           "packages": {
             "spdx-license-ids": "3.0.5"
+          },
+          "paths": {
+            "spdx-license-ids": "tests/node_modules/spdx-license-ids/package.json"
           },
           "conformance": {
             "uniqueLicenseIds": [
@@ -129,6 +165,9 @@ describe('test `license` export', () => {
           "packages": {
             "type-fest": "0.6.0"
           },
+          "paths": {
+            "type-fest": "tests/node_modules/type-fest/package.json"
+          },
           "conformance": {
             "uniqueLicenseIds": [
               "MIT",
@@ -147,7 +186,7 @@ describe('test `license` export', () => {
           },
           "occurrences": 1
         }
-      }    
+      }
     )
   })
 })
