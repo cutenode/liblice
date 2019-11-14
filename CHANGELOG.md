@@ -1,5 +1,9 @@
 # Changelog
 
+## 3.1.0
+
+- Added `paths` property to `licenses` export [#12](https://github.com/cutenode/liblice/pull/12)
+
 ## 3.0.0
 
 - **BREAKING:** API typo fixed – `occurance` is now `occurrence` [#3](https://github.com/cutenode/liblice/pull/3)
