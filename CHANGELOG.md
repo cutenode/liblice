@@ -1,5 +1,9 @@
 # Changelog
 
+## 3.2.0
+
+- Re-ignore `/tests` within `node_modules/*` [#13](https://github.com/cutenode/liblice/pull/13)
+
 ## 3.1.0
 
 - Added `paths` property to `licenses` export [#12](https://github.com/cutenode/liblice/pull/12)
