@@ -30,7 +30,10 @@ describe('test `list` export', () => {
         "CC0-1.0",
         "MIT",
         "MIT",
-        "(MIT OR CC0-1.0)"
+        "(MIT OR CC0-1.0)",
+        "MIT",
+        "MIT",
+        "MIT"
       ]
     )
   })

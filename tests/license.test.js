@@ -27,7 +27,10 @@ describe('test `license` export', () => {
             "querystring": "0.2.0",
             "spdx-expression-parse": "3.0.0",
             "strip-bom": "4.0.0",
-            "supports-color": "5.5.0"
+            "supports-color": "5.5.0",
+            "worker-rpc": "0.1.1",
+            "wrap-ansi": "5.1.0",
+            "string-width": "3.1.0"
           },
           "paths": {
             "@babel/code-frame": "tests/node_modules/@babel/code-frame/package.json",
@@ -48,7 +51,10 @@ describe('test `license` export', () => {
             "querystring": "tests/node_modules/querystring/package.json",
             "spdx-expression-parse": "tests/node_modules/spdx-expression-parse/package.json",
             "strip-bom": "tests/node_modules/strip-bom/package.json",
-            "supports-color": "tests/node_modules/supports-color/package.json"
+            "supports-color": "tests/node_modules/supports-color/package.json",
+            "worker-rpc": "tests/node_modules/worker-rpc/package.json",
+            "wrap-ansi": "tests/node_modules/wrap-ansi/package.json",
+            "string-width": "tests/node_modules/wrap-ansi/node_modules/string-width/package.json"
           },
           "conformance": {
             "uniqueLicenseIds": [
@@ -64,7 +70,7 @@ describe('test `license` export', () => {
               "includesDeprecated": false
             }
           },
-          "occurrences": 19
+          "occurrences": 22
         },
         "BSD": {
           "packages": {
