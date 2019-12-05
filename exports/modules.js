@@ -13,14 +13,24 @@ const buildObjectExport = function (directory) {
     const parsed = parseLicense(loadedJSON)
     const loadedConformance = conformance(parsed)
 
-    objectOfLicenses[loadedJSON.name] = {
-      license: parsed,
-      path: jsonFile.split(path.sep).join('/'),
-      version: loadedJSON.version,
-      author: loadedJSON.author
-        ? loadedJSON.author
-        : null,
-      conformance: loadedConformance
+    if (objectOfLicenses[loadedJSON.name] !== undefined) {
+      objectOfLicenses[loadedJSON.name].push({ // push additional instances if one already exists
+        license: parsed,
+        path: jsonFile.split(path.sep).join('/'),
+        version: loadedJSON.version,
+        author: loadedJSON.author ? loadedJSON.author : null,
+        conformance: loadedConformance
+      })
+    } else {
+      objectOfLicenses[loadedJSON.name] = []
+
+      objectOfLicenses[loadedJSON.name].push({ // push the first instance
+        license: parsed,
+        path: jsonFile.split(path.sep).join('/'),
+        version: loadedJSON.version,
+        author: loadedJSON.author ? loadedJSON.author : null,
+        conformance: loadedConformance
+      })
     }
   })
 
