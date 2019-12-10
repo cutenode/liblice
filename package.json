@@ -43,6 +43,6 @@
   "homepage": "https://github.com/cutenode/liblice#readme",
   "devDependencies": {
     "jest": "^24.8.0",
-    "standard": "^13.0.2"
+    "standard": "^14.3.1"
   }
 }
