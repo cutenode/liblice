@@ -20,6 +20,7 @@
   "author": "Tierney Cyren <hello@bnb.im>",
   "license": "MIT",
   "dependencies": {
+    "@npmcli/arborist": "0.0.0-pre.6",
     "conformance": "^1.0.0",
     "load-json-file": "^6.1.0"
   },
