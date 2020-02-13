@@ -547,5 +547,77 @@
         "includesDeprecated": false
       }
     }
+  },
+  "worker-rpc": {
+    "license": "MIT",
+    "path": "tests/node_modules/worker-rpc/package.json",
+    "version": "0.1.1",
+    "author": {
+      "name": "Christian Speckner",
+      "email": "cnspeckn@googlemail.com",
+      "url": "https://github.com/DirtyHairy/"
+    },
+    "conformance": {
+      "uniqueLicenseIds": [
+        "MIT"
+      ],
+      "spdxLicenseLinks": [
+        "https://spdx.org/licenses/MIT.html#licenseText"
+      ],
+      "spdx": {
+        "osi": true,
+        "fsf": true,
+        "fsfAndOsi": true,
+        "includesDeprecated": false
+      }
+    }
+  },
+  "wrap-ansi": {
+    "license": "MIT",
+    "path": "tests/node_modules/wrap-ansi/package.json",
+    "version": "5.1.0",
+    "author": {
+      "name": "Sindre Sorhus",
+      "email": "sindresorhus@gmail.com",
+      "url": "sindresorhus.com"
+    },
+    "conformance": {
+      "uniqueLicenseIds": [
+        "MIT"
+      ],
+      "spdxLicenseLinks": [
+        "https://spdx.org/licenses/MIT.html#licenseText"
+      ],
+      "spdx": {
+        "osi": true,
+        "fsf": true,
+        "fsfAndOsi": true,
+        "includesDeprecated": false
+      }
+    }
+  },
+  "string-width": {
+    "license": "MIT",
+    "path": "tests/node_modules/wrap-ansi/node_modules/string-width/package.json",
+    "version": "3.1.0",
+    "author": {
+      "name": "Sindre Sorhus",
+      "email": "sindresorhus@gmail.com",
+      "url": "sindresorhus.com"
+    },
+    "conformance": {
+      "uniqueLicenseIds": [
+        "MIT"
+      ],
+      "spdxLicenseLinks": [
+        "https://spdx.org/licenses/MIT.html#licenseText"
+      ],
+      "spdx": {
+        "osi": true,
+        "fsf": true,
+        "fsfAndOsi": true,
+        "includesDeprecated": false
+      }
+    }
   }
 }
